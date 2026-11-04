@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy · Agent Config Generator</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="legal.css" />
+  </head>
+  <body>
+    <main>
+      <a class="back" href="./">Back to the generator</a>
+      <h1>Privacy</h1>
+      <p class="updated">Last updated: 4 November 2026</p>
+
+      <p>
+        Agent Config Generator is a static web page. There is no account, no database and no server of ours that
+        receives what you type. We do not use cookies, analytics or advertising.
+      </p>
+
+      <h2>What stays in your browser</h2>
+      <p>
+        Your choices, the commands you enter and the generated files are computed in your browser. A folder you
+        import from your computer is read in the browser and never uploaded.
+      </p>
+      <p>
+        So that a reload does not lose your work, the setup in progress (your choices and what was read from the
+        imported project) is saved in this browser's local storage, on your device only. "Clear this setup", at the
+        bottom of the page, deletes it. It never contains your API key, which has its own separate option.
+      </p>
+
+      <h2>Importing a GitHub repository</h2>
+      <p>
+        When you import a public repository, your browser calls GitHub directly (<code>api.github.com</code> and
+        <code>raw.githubusercontent.com</code>) to list its files and read a few configuration files. GitHub sees
+        these requests, like any visit to GitHub; its privacy statement applies.
+      </p>
+
+      <h2>The AI-written project guide</h2>
+      <p>
+        This feature is optional and only runs when you click "Write the guide". Your browser then sends, to the
+        provider you chose: the list of file paths of the imported repository, the configuration and documentation
+        files that were read, and the detected stack and commands. Values found in MCP configuration files (tokens,
+        keys, headers) are masked before sending. The provider processes the request under its own terms and privacy
+        policy, and bills it to your account.
+      </p>
+      <ul>
+        <li>
+          <strong>OpenRouter account</strong>: "Connect with OpenRouter" takes you to <code>openrouter.ai</code>, where
+          you sign in and approve a key for this site. You come back here with that key; requests then go to
+          <code>openrouter.ai</code>, which forwards them to the model. You can revoke the key in your OpenRouter
+          settings at any time.
+        </li>
+        <li>
+          <strong>Anthropic API key</strong>: you paste your own key; requests go to <code>api.anthropic.com</code>.
+        </li>
+      </ul>
+      <p>
+        Keys are kept for the current browser tab only (session storage) and are forgotten when you close it. They
+        are never written to disk by this site, never put in share links and never sent anywhere else.
+      </p>
+
+      <h2>Share links</h2>
+      <p>
+        A share link contains your setup, compressed, after the <code>#</code> of the address. Browsers do not send
+        that part to the server hosting the page. Anyone who has the link can read what it contains: agents,
+        options, commands, MCP server definitions and, when it fits, the notes kept from your existing instruction
+        files. It never contains your API key or the secret values of your MCP servers.
+      </p>
+
+      <h2>Hosting</h2>
+      <p>
+        The company hosting the page may keep standard technical logs of requests (such as IP address, date and
+        requested file) for security and operation, as for any website.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions about this page: <a href="https://github.com/jodevweb">github.com/jodevweb</a>.</p>
+    </main>
+  </body>
+</html>

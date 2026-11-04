@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jodevweb.github.io/agent-config/sitemap.xml
